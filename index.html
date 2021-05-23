@@ -27,8 +27,10 @@ var sticky = navbar.offsetTop;
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
+    document.getElementById("demo").innerHTML = "sticky_added";
   } else {
     navbar.classList.remove("sticky");
+    document.getElementById("demo").innerHTML = "sticky_not_dded";
   }
 }
 </script>
@@ -56,6 +58,7 @@ function myFunction() {
 </div>
 <!-- First Container -->
 <div class="content" id="content">
+    <p id="demo"></p>
     <div class="container-fluid bg-1 text-center">
       <h3 class="margin">Who Am I?</h3>
       <img src="https://www.w3schools.com/bootstrap/bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
