@@ -55,8 +55,7 @@ p {font-size: 16px;}
 }
 
 #navbar a:hover {
-  background-color: #a0a0a0;
-  color: white;
+  color: #1abc9c;
 }
 
 .content {
