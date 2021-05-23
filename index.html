@@ -112,7 +112,7 @@ function myFunction() {
 }
 
 function laukums(n) {
-    document.getElementById("demo").innerHTML = "new_text";
+    document.getElementById("demo").innerHTML = "new_text" +n;
     var p=Document.createElement("P");
     p.innerHTML = "Te būs laukums ar " +n+ " lauciņiem";
     document.getElementById("dinamisks").appendChild(p);
