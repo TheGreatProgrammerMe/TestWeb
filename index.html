@@ -84,6 +84,7 @@
             <p>Izvēlies laukuma izmēru <input name="cik" type="number" min="2" max="6" step="2" ></p>
             <input type="button" onclick="laukums(cik.value)" value="Ģenerēt laukumu">
         </form>
+        <p id="demo">Text on start</p>
     </div>
     <!-- Footer -->
     <footer class="container-fluid bg-4 text-center">
@@ -111,6 +112,7 @@ function myFunction() {
 }
 
 function laukums(n) {
+    document.getElementById("demo").innerHTML = "new_text";
     let p=Document.createElement("P");
     p.innerHTML = "Te būs laukums ar " +n+ " lauciņiem";
     document.getElementById("dinamisks").appendChild(p);
