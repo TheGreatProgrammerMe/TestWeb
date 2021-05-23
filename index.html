@@ -38,7 +38,6 @@
 </div>
 <!-- First Container -->
 <div class="content" id="content">
-    <p id="demo" ></p>
     <div class="container-fluid bg-1 text-center">
       <h3 class="margin">Who Am I?</h3>
       <img src="https://www.w3schools.com/bootstrap/bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
@@ -89,15 +88,11 @@ var navbar = document.getElementById("navbar");
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
-document.getElementById("demo").innerHTML = "was not changed";
-
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    document.getElementById("demo").innerHTML = "sticky_added";
     navbar.classList.add("sticky");
   } else {
-    document.getElementById("demo").innerHTML = "sticky_not_added";
     navbar.classList.remove("sticky");
   }
 }
