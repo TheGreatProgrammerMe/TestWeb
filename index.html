@@ -13,27 +13,7 @@
 
 </head>
 <body>
-<script>
-    // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
 
-// Get the navbar
-var navbar = document.getElementById("navbar");
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-    document.getElementById("demo").innerHTML = "sticky_added";
-  } else {
-    navbar.classList.remove("sticky");
-    document.getElementById("demo").innerHTML = "sticky_not_dded";
-  }
-}
-</script>
 <!-- Navbar -->
 <div id="navbar">
     <nav class="navbar navbar-default">
@@ -98,5 +78,30 @@ function myFunction() {
       <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
     </footer>
 </div>
+
+<script>
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+document.getElementById("demo").innerHTML = "was not changed";
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    document.getElementById("demo").innerHTML = "sticky_added";
+    navbar.classList.add("sticky");
+  } else {
+    document.getElementById("demo").innerHTML = "sticky_not_added";
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
 </body>
 </html>
