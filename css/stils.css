@@ -78,5 +78,10 @@ input {
 
 .my_gradient{
   background: linear-gradient(to right,#000,#0575e6);
-  text-align: center;
+}
+.my_gradient a {
+    text-align: center;
+}
+.my_gradient h3 {
+    text-align: center;
 }
