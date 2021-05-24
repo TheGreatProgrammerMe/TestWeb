@@ -88,4 +88,5 @@ input {
   text-overflow: ellipsis;
   background: white;
   resize: horizontal;
+  color: black;
 }
