@@ -82,11 +82,13 @@ input {
 }
 
 .truncate h4 {
-  width:200px;
+  width: 200px;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;  
-  resize:horizontal;
+  text-overflow: ellipsis;
   padding: 20px;
+  font-size: 1.3rem;
+  margin: 0;
   background: white;
+  resize: horizontal;
 }
