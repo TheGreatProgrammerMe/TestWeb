@@ -86,7 +86,6 @@ input {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 20px;
   background: white;
   resize: horizontal;
 }
