@@ -75,3 +75,8 @@ p {font-size: 16px;}
 input {
     color: black;
 }
+
+.my_gradient{
+  background: linear-gradient(to right,#000,#0575e6);
+  text-align: center;
+}
