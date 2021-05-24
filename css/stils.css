@@ -85,3 +85,19 @@ input {
 .my_gradient h3 {
     text-align: center;
 }
+.truncate h4 {
+  width:200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;  
+  resize:horizontal;
+  padding: 20px;
+}
+.truncate code {
+  width:500px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;  
+  resize:vertical;
+  padding: 20px;
+}
