@@ -91,3 +91,15 @@ input {
   color: black;
   padding:20px;
 }
+
+#img1 {
+  filter: grayscale(100%);
+}
+
+#img2 {
+  filter: blur(5px);
+}
+
+#img3 {
+  filter: hue-rotate(180deg);
+}
