@@ -92,14 +92,14 @@ input {
   padding:20px;
 }
 
-#img1 {
-  filter: grayscale(100%);
-}
-
-#img2 {
+.blur {
   filter: blur(5px);
 }
 
-#img3 {
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.huerotate {
   filter: hue-rotate(180deg);
 }
