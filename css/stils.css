@@ -103,3 +103,8 @@ input {
 .huerotate {
   filter: hue-rotate(180deg);
 }
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}

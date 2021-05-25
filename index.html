@@ -133,8 +133,7 @@ function myFunction() {
 function laukums(n) {
     let table=document.createElement("TABLE");
     table.setAttribute('border', '1');
-    table.setAttribute('margin-left', 'auto');
-    table.setAttribute('margin-right', 'auto');
+    table.className += "center";
     let num = 1;
     for (let i = 0;i<n;i++) {
         let tr = document.createElement('TR');
