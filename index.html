@@ -133,9 +133,20 @@ function myFunction() {
 
 function laukums(n) {
     document.getElementById("demo").innerHTML = "new_text " +n;
-    let p=document.createElement("P");
-    p.innerHTML = "Te būs laukums ar " +n+ " lauciņiem";
-    document.getElementById("dinamisks").appendChild(p);
+    let table=document.createElement("TABLE");
+    table.setAttribute('border', '1');
+    let num = 1;
+    for (let i = 0;i<n;i++) {
+        let tr = document.createElement('TR');
+        for (let j = 0;j<n;j++) {
+            let td = document.createElement('TD');
+            td.appendChild(document.createTextNode(num));
+            num = num + 1;
+            tr.appendChild(td);
+        }
+        table.appendChild(tr);
+    }
+    document.getElementById("dinamisks").appendChild(table);
 }
 
 </script>
